@@ -1,0 +1,41 @@
+{
+  "path": "http://hl7.org/fhir/R4/",
+  "canonical": "https://www.ehealth.fgov.be/standards/fhir",
+  "igId": "BeCoreImplementationGuide",
+  "igName": "TheCoreBelgianFederalFHIRProfiles",
+  "packageId": "BeCoreImplementationGuide",
+  "igVer": "1.1.0",
+  "errorCount": 0,
+  "version": "4.0.1",
+  "revision": "a53ec6ee1b",
+  "versionFull": "4.0.1-a53ec6ee1b",
+  "toolingVersion": "4.2.0",
+  "toolingRevision": "3",
+  "toolingVersionFull": "4.2.0 (3)",
+  "totalFiles": 44,
+  "processedFiles": 62,
+  "genDate": "Wed, Apr 29, 2020 09:17+0200",
+  "genDay": "29/04/2020",
+  "ig": {
+    "id": "BeCoreImplementationGuide",
+    "name": "TheCoreBelgianFederalFHIRProfiles",
+    "title": "The Core Belgian Federal FHIR Profiles",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide",
+    "version": "1.1.0",
+    "status": "active",
+    "experimental": false,
+    "publisher": "eHealth Platform",
+    "gitstatus": "",
+    "contact": [
+      {
+        "name": "Etienne Cantineau",
+        "telecom": [
+          "etienne.cantineau@ehealth.fgov.be"
+        ]
+      }
+    ],
+    "date": "2020-04-29T09:17:16+02:00",
+    "description": "The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.",
+    "fhirVersion": "4.0.1"
+  }
+}

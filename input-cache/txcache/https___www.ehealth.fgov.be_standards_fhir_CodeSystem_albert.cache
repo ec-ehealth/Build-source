@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert",
+  "code" : "H-RATE"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert\" is not known (encountered paired with code = \"H-RATE\"); The code provided (https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert#H-RATE) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

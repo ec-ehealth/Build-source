@@ -1,0 +1,10 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BeRiskManifestation",
+  "id": "be-riskmanifestation",
+  "title": "ValueSet risk manifestation",
+  "description": "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.",
+  "version": "1.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation"
+}

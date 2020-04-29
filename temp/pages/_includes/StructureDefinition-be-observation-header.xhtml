@@ -1,0 +1,18 @@
+{% raw %}<p>
+The official URL for this profile is:
+</p>
+<pre>https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation</pre>
+<p>
+<p>Belgian federal profile for an observation. Initially based on the functional description of the NIHDI. As Observation is used in many instances in FHIR,
+please refer to the HL7 specs of the base resource for guidance around expression of actual values using UCUM, methods, location on body etc.
+Special remarks for KMEHR users: The FHIR Observation resource captures many things that are in a KMEHR message structured as an 'item'.
+This includes things like 'vital signs such as body weight, blood pressure, and temperature […], personal characteristics such as eye-color […] social history like tobacco use, family support,
+or cognitive status […]' ( https://www.hl7.org/fhir/R4/observation.html ) For some of these things, HL7 already has worked out profiles and they SHALL be used when such a use case is needed.
+Specifically, projects SHALL take note of the existing profiles described on https://www.hl7.org/fhir/R4/observation-vitalsigns.html.</p>
+</p>
+<p>
+This profile builds on <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>.</p>
+<p>
+This profile was published on Wed Apr 29 09:17:16 CEST 2020 as a active by eHealth Platform.
+</p>
+{% endraw %}

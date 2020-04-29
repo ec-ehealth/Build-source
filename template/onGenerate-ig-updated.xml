@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+   <id value="BeCoreImplementationGuide"/>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>TheCoreBelgianFederalFHIRProfiles</h2>
+         <p>The official URL for this implementation guide is: </p>
+         <pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide</pre>
+         <div>
+            <p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.</p>
+         </div>
+      </div>
+   </text>
+   <url value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide"/>
+   <version value="1.1.0"/>
+   <name value="TheCoreBelgianFederalFHIRProfiles"/>
+   <title value="The Core Belgian Federal FHIR Profiles"/>
+   <status value="active"/>
+   <date value="2020-04-29T09:17:16+02:00"/>
+   <publisher value="eHealth Platform"/>
+   <contact>
+      <name value="Etienne Cantineau"/>
+      <telecom>
+         <system value="email"/>
+         <value value="etienne.cantineau@ehealth.fgov.be"/>
+      </telecom>
+   </contact>
+   <description value="The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium."/>
+   <packageId value="BeCoreImplementationGuide"/>
+   <license value="CC0-1.0"/>
+   <fhirVersion value="4.0.1"/>
+   <definition>
+
+
+
+
+
+
+      <grouping id="_str_profile">
+         <name value="Structures: Resource Profiles"/>
+         <description value="These define constraints on FHIR resources that need to be complied with by conformant implementations"/>
+      </grouping>
+      <grouping id="_str_datatype">
+         <name value="Structures: Data Type Profiles"/>
+         <description value="These define constraints on FHIR data types that need to be complied with by conformant implementations"/>
+      </grouping>
+
+      <grouping id="_term_valueset">
+         <name value="Terminology: Value Sets"/>
+         <description value="These define sets of codes used by systems conforming with this implementation guide"/>
+      </grouping>
+      <grouping id="_term_codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming with this implementation guide"/>
+      </grouping>
+      <grouping id="_term_namingsystem">
+         <name value="Terminology: Naming Systems"/>
+         <description value="These define identifier and/or code system identities used by systems conforming with this implementation guide"/>
+      </grouping>
+
+
+
+      <grouping id="_ex_example">
+         <name value="Example: Example Instances"/>
+         <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like"/>
+      </grouping>
+
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:complex-type"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-address.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-address"/>
+         </reference>
+         <name value="Address core BE profile"/>
+         <description value="Belgian federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_datatype"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-allergyintolerance.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-allergyintolerance"/>
+         </reference>
+         <name value="Allergy Intolerance core BE profile"/>
+         <description value="Belgian federal profile for an allergy and/or an intolerance. Initially based on the functional description of the NIHDI."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-mycarenetclaim.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-mycarenetclaim"/>
+         </reference>
+         <name value="My CareNet Claim BE profile"/>
+         <description value="Claim profile for use in the different eAgreement flow from MyCareNet."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-mycareneteagreementdemand.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-mycareneteagreementdemand"/>
+         </reference>
+         <name value="My CareNet eAgreement Demand Bundle BE profile"/>
+         <description value="The profile for the demand for an agreement."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-mycareneteagreementmessageheader.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-mycareneteagreementmessageheader"/>
+         </reference>
+         <name value="My CareNet eAgreement MessageHeader BE profile"/>
+         <description value="This is the generic MessageHeader profile for use in the different eAgreement flows from MyCareNet."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-observation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-observation"/>
+         </reference>
+         <name value="Observation core BE profile"/>
+         <description value="Belgian federal profile for an observation. Initially based on the functional description of the NIHDI. As Observation is used in many instances in FHIR, &#xA;please refer to the HL7 specs of the base resource for guidance around expression of actual values using UCUM, methods, location on body etc.&#xA;Special remarks for KMEHR users: The FHIR Observation resource captures many things that are in a KMEHR message structured as an 'item'. &#xA;This includes things like 'vital signs such as body weight, blood pressure, and temperature […], personal characteristics such as eye-color […] social history like tobacco use, family support, &#xA;or cognitive status […]' ( https://www.hl7.org/fhir/R4/observation.html ) For some of these things, HL7 already has worked out profiles and they SHALL be used when such a use case is needed. &#xA;Specifically, projects SHALL take note of the existing profiles described on https://www.hl7.org/fhir/R4/observation-vitalsigns.html."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:complex-type"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-observationcodeableconcept.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-observationcodeableconcept"/>
+         </reference>
+         <name value="Observation codeable concept core BE profile"/>
+         <description value="This is a supporting profile, only to give guidelines how to express a few of the typical coding systems. In general, it shall be noted SNOMED-CT is the preferred national terminology. &#xA;Other coding systems remain allowed or MAY be preferred in specific flows (e.g. the use of LOINC codes to express a laboratory test.)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_datatype"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-organization.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-organization"/>
+         </reference>
+         <name value="Organization core BE profile"/>
+         <description value="Belgian federal profile for an organization. Initially based on the functional description of the NIHDI."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-patient.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-patient"/>
+         </reference>
+         <name value="Patient core BE profile"/>
+         <description value="Belgian federal profile for a patient. Initially based on the functional description of the NIHDI. Special remarks for KMEHR users: following elements in KMEHR are not available in this FHIR resource. &#xA;If needed, an extension can be defined in a future iteration of these specifications: the 'deathlocation' (location is not available but the death of the patient is expressed by either date or Boolean cfr. infra.),&#xA;the 'insurancystatus' (covered in a seperate FHIR resource: Coverage), 'insurancymembership' (covered in a seperate FHIR resource: Coverage) and 'profession' (covered in a possible future FHIR resource: OccupationalData.)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-practitioner.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-practitioner"/>
+         </reference>
+         <name value="Practitioner core BE profile"/>
+         <description value="Belgian federal profile for a practitioner. Initially based on the functional description of the NIHDI."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-practitionerrole.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-practitionerrole"/>
+         </reference>
+         <name value="Practitioner Role core BE profile"/>
+         <description value="Belgian federal profile for a practitioner role. Initially based on the functional description of the NIHDI."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-be-provenance.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/be-provenance"/>
+         </reference>
+         <name value="Provenance core BE profile"/>
+         <description value="Belgian federal profile for a provenance. Note this profile does not introduce any changes from the base profile but has been created to mark its importance, &#xA;specifically when FHIR is used in a non-document approach. General use case remarks: 'Provenance of a resource is a record that describes entities and processes involved in producing and delivering or &#xA;otherwise influencing that resource.' (cfr. the HL7 base specifications) According to the FHIR specifications, the provenance resource SHALL only be provided when no other resource already plays this role: &#xA;for a Patient it SHOULD be its managing organization, provenance of an Observation SHOULD be its performer, provenance of an AllergyIntolerance SHOULD be its recorder. &#xA;'Many other FHIR resources contain some elements that represent information about how the resource was obtained, and therefore they overlap with the functionality of the Provenance.' &#xA;Special remarks for KMEHR users: The FHIR Provenance resource in general refers to an entity that had something to do with the creation or updating of something else. In a KMEHR context, &#xA;this is somewhat different – as it is ‘XML document’ based, each KMEHR message has an 'author' element that is responsible."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-be-allergyintolerancecode.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/be-allergyintolerancecode"/>
+         </reference>
+         <name value="ValueSet allergy intolerance code"/>
+         <description value="Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-be-causativeagent.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/be-causativeagent"/>
+         </reference>
+         <name value="ValueSet causative agent"/>
+         <description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-be-civilstate.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/be-civilstate"/>
+         </reference>
+         <name value="ValueSet civil state"/>
+         <description value="Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. &#xA;Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE &#xA;for the Belgian specific code."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-be-contactperson.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/be-contactperson"/>
+         </reference>
+         <name value="ValueSet contact person"/>
+         <description value="Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-be-exposureroute.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/be-exposureroute"/>
+         </reference>
+         <name value="ValueSet exposureroute"/>
+         <description value="Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-be-noallergy.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/be-noallergy"/>
+         </reference>
+         <name value="ValueSet no allergies"/>
+         <description value="Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-be-beproductorservice.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/be-beproductorservice"/>
+         </reference>
+         <name value="ValueSet productor service"/>
+         <description value="NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-be-riskmanifestation.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/be-riskmanifestation"/>
+         </reference>
+         <name value="ValueSet risk manifestation"/>
+         <description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-cd-civilstate.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/cd-civilstate"/>
+         </reference>
+         <name value="CodeSystem CD-CIVILSTATE"/>
+         <description value="Civil state in Belgium."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-cd-contact-person.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/cd-contact-person"/>
+         </reference>
+         <name value="CodeSystem CD-CONTACT-PERSON"/>
+         <description value="Contact person"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-cd-fed-country.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/cd-fed-country"/>
+         </reference>
+         <name value="CodeSystem CD-FED-COUNTRY"/>
+         <description value="FedICT country codes."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-cd-hcparty.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/cd-hcparty"/>
+         </reference>
+         <name value="CodeSystem CD-HCPARTY"/>
+         <description value="healthcare party in Belgium."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-agreement-types.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/agreement-types"/>
+         </reference>
+         <name value="CodeSystem agreement types"/>
+         <description value="Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-message-events.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/message-events"/>
+         </reference>
+         <name value="CodeSystem message events"/>
+         <description value="Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nihdi-legal-physiotherapy-fa.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nihdi-legal-physiotherapy-fa"/>
+         </reference>
+         <name value="CodeSystem NIHDILegalPhysiotherapyFa"/>
+         <description value="Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. &#xD;&#xA;&#x9;The codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="AllergyIntolerance"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="AllergyIntolerance-allergyIntolerance1.html"/>
+         </extension>
+         <reference>
+            <reference value="AllergyIntolerance/allergyIntolerance1"/>
+         </reference>
+         <name value="AllergyIntolerance 1"/>
+         <description value="AllergyIntolerance 1"/>
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="NamingSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="NamingSystem-be-cbe.html"/>
+         </extension>
+         <reference>
+            <reference value="NamingSystem/be-cbe"/>
+         </reference>
+         <name value="NamingSystem CBE"/>
+         <description value="The CBE naming system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_namingsystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="NamingSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="NamingSystem-be-ehp.html"/>
+         </extension>
+         <reference>
+            <reference value="NamingSystem/be-ehp"/>
+         </reference>
+         <name value="NamingSystem EHP"/>
+         <description value="The EHP naming system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_namingsystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="NamingSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="NamingSystem-be-nihdi.html"/>
+         </extension>
+         <reference>
+            <reference value="NamingSystem/be-nihdi"/>
+         </reference>
+         <name value="NamingSystem NIHDI"/>
+         <description value="The NIHDI naming system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_namingsystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="NamingSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="NamingSystem-be-ssin.html"/>
+         </extension>
+         <reference>
+            <reference value="NamingSystem/be-ssin"/>
+         </reference>
+         <name value="NamingSystem SSIN"/>
+         <description value="The SSIN naming system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_namingsystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Claim"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Claim-bemycarenetclaim1.html"/>
+         </extension>
+         <reference>
+            <reference value="Claim/bemycarenetclaim1"/>
+         </reference>
+         <name value="BeMyCareNetClaim 1"/>
+         <description value="BeMyCareNetClaim 1"/>
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Bundle"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Bundle-bemycareneteagreementdemand1.html"/>
+         </extension>
+         <reference>
+            <reference value="Bundle/bemycareneteagreementdemand1"/>
+         </reference>
+         <name value="BeMyCareNetEAgreementDemand 1"/>
+         <description value="BeMyCareNetEAgreementDemand 1"/>
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="MessageHeader"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="MessageHeader-bemycareneteagreementmessageheader1.html"/>
+         </extension>
+         <reference>
+            <reference value="MessageHeader/bemycareneteagreementmessageheader1"/>
+         </reference>
+         <name value="BeMyCareNetEAgreementMessageHeader 1"/>
+         <description value="BeMyCareNetEAgreementMessageHeader 1"/>
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Bundle"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Bundle-bundle1.html"/>
+         </extension>
+         <reference>
+            <reference value="Bundle/bundle1"/>
+         </reference>
+         <name value="Bundle 1"/>
+         <description value="Bundle 1"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Coverage"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Coverage-coverage1.html"/>
+         </extension>
+         <reference>
+            <reference value="Coverage/coverage1"/>
+         </reference>
+         <name value="coverage 1"/>
+         <description value="coverage 1"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-observation1.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/observation1"/>
+         </reference>
+         <name value="Observation 1"/>
+         <description value="Observation 1"/>
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-organization1.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/organization1"/>
+         </reference>
+         <name value="Organization 1"/>
+         <description value="Organization 1"/>
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-patient1.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/patient1"/>
+         </reference>
+         <name value="Patient 1"/>
+         <description value="Patient 1"/>
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Practitioner"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Practitioner-practitioner1.html"/>
+         </extension>
+         <reference>
+            <reference value="Practitioner/practitioner1"/>
+         </reference>
+         <name value="Practitioner 1"/>
+         <description value="Practitioner 1"/>
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="PractitionerRole"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="PractitionerRole-practitionerrole1.html"/>
+         </extension>
+         <reference>
+            <reference value="PractitionerRole/practitionerrole1"/>
+         </reference>
+         <name value="Practitioner role 1"/>
+         <description value="Practitioner role 1"/>
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Provenance"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Provenance-provenance1.html"/>
+         </extension>
+         <reference>
+            <reference value="Provenance/provenance1"/>
+         </reference>
+         <name value="Provenance 1"/>
+         <description value="Provenance 1"/>
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <page>
+         <nameUrl value="toc.html"/>
+         <title value="Table of Contents"/>
+         <generation value="html"/>
+         <page>
+            <nameUrl value="index.html"/>
+            <title value="Home"/>
+            <generation value="html"/>
+         </page>
+         <page>
+            <nameUrl value="guidance.html"/>
+            <title value="Guidance"/>
+            <generation value="html"/>
+         </page>
+         <page>
+            <nameUrl value="conventions.html"/>
+            <title value="Conventions"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="downloads.html"/>
+            <title value="Downloads"/>
+            <generation value="html"/>
+         </page>
+         <page>
+            <nameUrl value="changes.html"/>
+            <title value="Changes"/>
+            <generation value="html"/>
+         </page>
+         <page>
+            <nameUrl value="artifacts.html"/>
+            <title value="Artifacts Summary"/>
+            <generation value="html"/>
+            <page>
+               <nameUrl value="StructureDefinition-be-allergyintolerance.html"/>
+               <title value="Allergy Intolerance core BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-mycarenetclaim.html"/>
+               <title value="My CareNet Claim BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-mycareneteagreementdemand.html"/>
+               <title value="My CareNet eAgreement Demand Bundle BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-mycareneteagreementmessageheader.html"/>
+               <title value="My CareNet eAgreement MessageHeader BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-observation.html"/>
+               <title value="Observation core BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-organization.html"/>
+               <title value="Organization core BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-patient.html"/>
+               <title value="Patient core BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-practitioner.html"/>
+               <title value="Practitioner core BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-practitionerrole.html"/>
+               <title value="Practitioner Role core BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-provenance.html"/>
+               <title value="Provenance core BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-address.html"/>
+               <title value="Address core BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-be-observationcodeableconcept.html"/>
+               <title value="Observation codeable concept core BE profile"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-be-allergyintolerancecode.html"/>
+               <title value="ValueSet allergy intolerance code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-be-causativeagent.html"/>
+               <title value="ValueSet causative agent"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-be-civilstate.html"/>
+               <title value="ValueSet civil state"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-be-contactperson.html"/>
+               <title value="ValueSet contact person"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-be-exposureroute.html"/>
+               <title value="ValueSet exposureroute"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-be-noallergy.html"/>
+               <title value="ValueSet no allergies"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-be-beproductorservice.html"/>
+               <title value="ValueSet productor service"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-be-riskmanifestation.html"/>
+               <title value="ValueSet risk manifestation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-cd-civilstate.html"/>
+               <title value="CodeSystem CD-CIVILSTATE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-cd-contact-person.html"/>
+               <title value="CodeSystem CD-CONTACT-PERSON"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-cd-fed-country.html"/>
+               <title value="CodeSystem CD-FED-COUNTRY"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-cd-hcparty.html"/>
+               <title value="CodeSystem CD-HCPARTY"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-agreement-types.html"/>
+               <title value="CodeSystem agreement types"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-message-events.html"/>
+               <title value="CodeSystem message events"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nihdi-legal-physiotherapy-fa.html"/>
+               <title value="CodeSystem NIHDILegalPhysiotherapyFa"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="NamingSystem-be-cbe.html"/>
+               <title value="NamingSystem CBE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="NamingSystem-be-ehp.html"/>
+               <title value="NamingSystem EHP"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="NamingSystem-be-nihdi.html"/>
+               <title value="NamingSystem NIHDI"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="NamingSystem-be-ssin.html"/>
+               <title value="NamingSystem SSIN"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="AllergyIntolerance-allergyIntolerance1.html"/>
+               <title value="AllergyIntolerance 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Claim-bemycarenetclaim1.html"/>
+               <title value="BeMyCareNetClaim 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Bundle-bemycareneteagreementdemand1.html"/>
+               <title value="BeMyCareNetEAgreementDemand 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="MessageHeader-bemycareneteagreementmessageheader1.html"/>
+               <title value="BeMyCareNetEAgreementMessageHeader 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Bundle-bundle1.html"/>
+               <title value="Bundle 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Coverage-coverage1.html"/>
+               <title value="coverage 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-observation1.html"/>
+               <title value="Observation 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-organization1.html"/>
+               <title value="Organization 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-patient1.html"/>
+               <title value="Patient 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Practitioner-practitioner1.html"/>
+               <title value="Practitioner 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="PractitionerRole-practitionerrole1.html"/>
+               <title value="Practitioner role 1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Provenance-provenance1.html"/>
+               <title value="Provenance 1"/>
+               <generation value="generated"/>
+            </page>
+         </page>
+      </page>
+      <parameter>
+         <code value="copyrightyear"/>
+         <value value="2020+"/>
+      </parameter>
+      <parameter>
+         <code value="releaselabel"/>
+         <value value="CI Build"/>
+      </parameter>
+      <parameter>
+         <code value="show-inherited-invariants"/>
+         <value value="false"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/capabilities"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/examples"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/extensions"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/models"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/operations"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/profiles"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/vocabulary"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/maps"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="template/config"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="input/images"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="template/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="input/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-qa"/>
+         <value value="temp/qa"/>
+      </parameter>
+      <parameter>
+         <code value="path-temp"/>
+         <value value="temp/pages"/>
+      </parameter>
+      <parameter>
+         <code value="path-output"/>
+         <value value="output"/>
+      </parameter>
+      <parameter>
+         <code value="path-tx-cache"/>
+         <value value="input-cache/txcache"/>
+      </parameter>
+      <parameter>
+         <code value="path-suppressed-warnings"/>
+         <value value="input/ignoreWarnings.txt"/>
+      </parameter>
+      <parameter>
+         <code value="path-history"/>
+         <value value="https://www.ehealth.fgov.be/standards/fhir/history.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-html"/>
+         <value value="template-page.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-md"/>
+         <value value="template-page-md.html"/>
+      </parameter>
+      <parameter>
+         <code value="apply-contact"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-context"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-copyright"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-jurisdiction"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-license"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-publisher"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-version"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="active-tables"/>
+         <value value="true"/>
+      </parameter>
+   </definition>
+</ImplementationGuide>

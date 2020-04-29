@@ -1,0 +1,10 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BeExposureRoute",
+  "id": "be-exposureroute",
+  "title": "ValueSet exposureroute",
+  "description": "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.",
+  "version": "1.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute"
+}

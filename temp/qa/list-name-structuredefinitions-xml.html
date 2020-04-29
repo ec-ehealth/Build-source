@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+  <title>list-name-structuredefinitions-xml</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+ <li><a href="StructureDefinition-be-address.xml.html">Address core BE profile</a> Belgian federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately.</li>
+ <li><a href="StructureDefinition-be-allergyintolerance.xml.html">Allergy Intolerance core BE profile</a> Belgian federal profile for an allergy and/or an intolerance. Initially based on the functional description of the NIHDI.</li>
+ <li><a href="StructureDefinition-be-mycarenetclaim.xml.html">My CareNet Claim BE profile</a> Claim profile for use in the different eAgreement flow from MyCareNet.</li>
+ <li><a href="StructureDefinition-be-mycareneteagreementdemand.xml.html">My CareNet eAgreement Demand Bundle BE profile</a> The profile for the demand for an agreement.</li>
+ <li><a href="StructureDefinition-be-mycareneteagreementmessageheader.xml.html">My CareNet eAgreement MessageHeader BE profile</a> This is the generic MessageHeader profile for use in the different eAgreement flows from MyCareNet.</li>
+ <li><a href="StructureDefinition-be-observation.xml.html">Observation core BE profile</a> Belgian federal profile for an observation. Initially based on the functional description of the NIHDI. As Observation is used in many instances in FHIR, 
+please refer to the HL7 specs of the base resource for guidance around expression of actual values using UCUM, methods, location on body etc.
+Special remarks for KMEHR users: The FHIR Observation resource captures many things that are in a KMEHR message structured as an 'item'. 
+This includes things like 'vital signs such as body weight, blood pressure, and temperature […], personal characteristics such as eye-color […] social history like tobacco use, family support, 
+or cognitive status […]' ( https://www.hl7.org/fhir/R4/observation.html ) For some of these things, HL7 already has worked out profiles and they SHALL be used when such a use case is needed. 
+Specifically, projects SHALL take note of the existing profiles described on https://www.hl7.org/fhir/R4/observation-vitalsigns.html.</li>
+ <li><a href="StructureDefinition-be-observationcodeableconcept.xml.html">Observation codeable concept core BE profile</a> This is a supporting profile, only to give guidelines how to express a few of the typical coding systems. In general, it shall be noted SNOMED-CT is the preferred national terminology. 
+Other coding systems remain allowed or MAY be preferred in specific flows (e.g. the use of LOINC codes to express a laboratory test.)</li>
+ <li><a href="StructureDefinition-be-organization.xml.html">Organization core BE profile</a> Belgian federal profile for an organization. Initially based on the functional description of the NIHDI.</li>
+ <li><a href="StructureDefinition-be-patient.xml.html">Patient core BE profile</a> Belgian federal profile for a patient. Initially based on the functional description of the NIHDI. Special remarks for KMEHR users: following elements in KMEHR are not available in this FHIR resource. 
+If needed, an extension can be defined in a future iteration of these specifications: the 'deathlocation' (location is not available but the death of the patient is expressed by either date or Boolean cfr. infra.),
+the 'insurancystatus' (covered in a seperate FHIR resource: Coverage), 'insurancymembership' (covered in a seperate FHIR resource: Coverage) and 'profession' (covered in a possible future FHIR resource: OccupationalData.)</li>
+ <li><a href="StructureDefinition-be-practitioner.xml.html">Practitioner core BE profile</a> Belgian federal profile for a practitioner. Initially based on the functional description of the NIHDI.</li>
+ <li><a href="StructureDefinition-be-practitionerrole.xml.html">Practitioner Role core BE profile</a> Belgian federal profile for a practitioner role. Initially based on the functional description of the NIHDI.</li>
+ <li><a href="StructureDefinition-be-provenance.xml.html">Provenance core BE profile</a> Belgian federal profile for a provenance. Note this profile does not introduce any changes from the base profile but has been created to mark its importance, 
+specifically when FHIR is used in a non-document approach. General use case remarks: 'Provenance of a resource is a record that describes entities and processes involved in producing and delivering or 
+otherwise influencing that resource.' (cfr. the HL7 base specifications) According to the FHIR specifications, the provenance resource SHALL only be provided when no other resource already plays this role: 
+for a Patient it SHOULD be its managing organization, provenance of an Observation SHOULD be its performer, provenance of an AllergyIntolerance SHOULD be its recorder. 
+'Many other FHIR resources contain some elements that represent information about how the resource was obtained, and therefore they overlap with the functionality of the Provenance.' 
+Special remarks for KMEHR users: The FHIR Provenance resource in general refers to an entity that had something to do with the creation or updating of something else. In a KMEHR context, 
+this is somewhat different – as it is ‘XML document’ based, each KMEHR message has an 'author' element that is responsible.</li>
+</body>
+</html>
