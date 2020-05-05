@@ -10,10 +10,14 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"
+        "valueSet": [
+          "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"
+        ]
       },
       {
-        "system": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy"
+        "valueSet": [
+          "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy"
+        ]
       }
     ]
   }
