@@ -1,6 +1,36 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
+  "code" : "391737006"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Almond oil (substance)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "716186003"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "No known allergy (situation)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "409137002"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "No known history of drug allergy",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
   "code" : "762952008"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
@@ -37,6 +67,76 @@ v: {
   "display" : "Family practice (qualifier value)",
   "severity" : null,
   "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "762952008"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "391737006",
+        "display" : "Almond oil (substance)"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#762952008) is not  valid"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "762952008"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "716186003",
+        "display" : "No known allergy (situation)",
+        "designation" : [{
+          "language" : "en",
+          "value" : "No known allergy"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "geen gekende allergie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "pas d'allergie connue"
+        }]
+      },
+      {
+        "code" : "409137002",
+        "display" : "No known drug allergy (situation)",
+        "designation" : [{
+          "language" : "en",
+          "value" : "No known drug allergy"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "pas d'allergie aux drogues et/ou médicaments connue"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "geen gekende drugs- en/of geneesmiddelenallergie"
+        }]
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#762952008) is not  valid"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1040,6 +1140,113 @@ v: {
 v: {
   "display" : "Family practice (qualifier value)",
   "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "391737006",
+        "display" : "Almond oil (substance)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:a49125c7-35e9-40af-8225-252461379e08",
+    "timestamp" : "2020-05-05T09:12:56.364Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "391737006",
+      "display" : "Almond oil (substance)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "716186003",
+        "display" : "No known allergy (situation)",
+        "designation" : [{
+          "language" : "en",
+          "value" : "No known allergy"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "geen gekende allergie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "pas d'allergie connue"
+        }]
+      },
+      {
+        "code" : "409137002",
+        "display" : "No known drug allergy (situation)",
+        "designation" : [{
+          "language" : "en",
+          "value" : "No known drug allergy"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "pas d'allergie aux drogues et/ou médicaments connue"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "geen gekende drugs- en/of geneesmiddelenallergie"
+        }]
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:bf554d4b-89e7-48f9-b300-0392097f8fbe",
+    "timestamp" : "2020-05-05T09:12:56.708Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "716186003",
+      "display" : "pas d'allergie connue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "409137002",
+      "display" : "geen gekende drugs- en/of geneesmiddelenallergie"
+    }]
+  }
+},
   "error" : ""
 }
 -------------------------------------------------------------------------------------

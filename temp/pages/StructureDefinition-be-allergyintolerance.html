@@ -222,6 +222,10 @@
   <h3 id="tx">Terminology Bindings</h3>
   {%include StructureDefinition-be-allergyintolerance-tx.xhtml%}
 
+  <a name="inv"> </a>
+  <h3 id="inv">Constraints</h3>
+  {%include StructureDefinition-be-allergyintolerance-inv.xhtml%}
+
   {% assign notes = site.data.pages[page.path].notes %}
   {% if notes != null %}
   {% if site.data.pages[page.path].notes-type == 'xml' %}
@@ -238,6 +242,7 @@
   {% endif %}
   {% endif %}
 
+  {%include StructureDefinition-be-allergyintolerance-history.xhtml%}
 </div>
 {% assign includetabscripts = 'true' %}
 {% include fragment-pageend.html %}

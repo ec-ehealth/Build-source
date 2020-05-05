@@ -33,20 +33,12 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-			<a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
-				<img  alt="belgium.be" src="assets/images/logo-be.png">
-			</a>
-			<a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
-				<img height="50" alt="Welcome on ehealth website" src="assets/images/logo-ehealth.png"/>
-			</a>
-            IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.ehealth.fgov.be">eHealth Platform</a>.  Package hl7.be.core#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 18, 2019 09:12+0100">2019-12-18</span>
-            <br/>
-		    <span>
-				Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
-			</span>
-		</p>
+          IG &#169; {{site.data.info.copyrightyear}} <a style="color: #81BEF7" href="{{site.data.fhir.ig.contact[0].telecom[0]}}">{{site.data.fhir.ig.publisher}}</a>.  Package {{site.data.fhir.packageId}}#{{site.data.fhir.igVer}} based on <a style="color: #81BEF7" href="{{site.data.fhir.path}}">FHIR {{site.data.fhir.version}}</a>. Generated <span title="{{site.data.fhir.genDate}}">{{site.data.fhir.genDate | date: "%Y-%m-%d"}}</span>
+          <br/>
+          <span style="color: #FFFF77">
+            {% include fragment-footer.html %}
+          </span>
+        </p>
       </div>  <!-- /inner-wrapper -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-footer -->
@@ -63,7 +55,6 @@
   <script type="text/javascript" src="{{site.data.info.assets}}assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="{{site.data.info.assets}}assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="{{site.data.info.assets}}assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="{{site.data.info.assets}}assets/js/fhir.js"> </script>
   <script type="text/javascript" src="{{site.data.info.assets}}assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
