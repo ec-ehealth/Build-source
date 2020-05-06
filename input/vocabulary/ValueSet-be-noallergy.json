@@ -17,6 +17,11 @@
             "display": "No known allergy (situation)",
             "designation": [
               {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
                 "language": "en",
                 "value": "No known allergy"
               },

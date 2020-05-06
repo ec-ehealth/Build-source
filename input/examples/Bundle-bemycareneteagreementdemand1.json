@@ -6,7 +6,7 @@
       "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand"
     ]
   },
-  "type": "message",
+  "type": "transaction",
   "entry": [
     {
       "resource": {
@@ -25,7 +25,11 @@
           "endpoint": "testuri"
         }
       },
-      "fullUrl": "MessageHeader/2"
+      "fullUrl": "MessageHeader/2",
+      "request": {
+        "method": "POST",
+        "url": "MessageHeader"
+      }
     },
     {
       "resource": {
@@ -42,7 +46,11 @@
           }
         ]
       },
-      "fullUrl": "test2"
+      "fullUrl": "Practitioner/2",
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
     },
     {
       "resource": {
@@ -51,14 +59,6 @@
         "meta": {
           "profile": [
             "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim"
-          ]
-        },
-        "subType": {
-          "coding": [
-            {
-              "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/agreement-types",
-              "code": "physiotherapy_fa"
-            }
           ]
         },
         "identifier": [
@@ -73,6 +73,14 @@
             {
               "system": "http://terminology.hl7.org/CodeSystem/claim-type",
               "code": "institutional"
+            }
+          ]
+        },
+        "subType": {
+          "coding": [
+            {
+              "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/agreement-types",
+              "code": "physiotherapy_fa"
             }
           ]
         },
@@ -105,7 +113,11 @@
           }
         ]
       },
-      "fullUrl": "Claim/2"
+      "fullUrl": "Claim/2",
+      "request": {
+        "method": "POST",
+        "url": "Claim"
+      }
     },
     {
       "resource": {
@@ -120,7 +132,11 @@
           "reference": "Practitioner/Practitioner2"
         }
       },
-      "fullUrl": "test4"
+      "fullUrl": "PractitionerRole/2",
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      }
     },
     {
       "resource": {
@@ -136,7 +152,11 @@
           }
         ]
       },
-      "fullUrl": "test5"
+      "fullUrl": "Coverage/2",
+      "request": {
+        "method": "POST",
+        "url": "Coverage"
+      }
     },
     {
       "resource": {
@@ -149,7 +169,11 @@
         },
         "name": "testorga"
       },
-      "fullUrl": "test6"
+      "fullUrl": "Organization/2",
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
     },
     {
       "resource": {
@@ -162,7 +186,11 @@
         },
         "gender": "male"
       },
-      "fullUrl": "test7"
+      "fullUrl": "Patient/2",
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
     }
   ]
 }
