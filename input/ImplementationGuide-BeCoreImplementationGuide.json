@@ -17,12 +17,12 @@
         }
       ]
     },
-	{
-      "name": "Etienne Cantineau",
+    {
+      "name": "Message structure",
       "telecom": [
         {
           "system": "email",
-          "value": "etienne.cantineau@ehealth.fgov.be"
+          "value": "message-structure@ehealth.fgov.be"
         }
       ]
     }
@@ -49,6 +49,14 @@
         },
         "name": "Allergy Intolerance core BE profile",
         "description": "Belgian federal profile for an allergy and/or an intolerance. Initially based on the functional description of the NIHDI.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/be-diagnosticreport"
+        },
+        "name": "Disagnostic Report core BE profile",
+        "description": "Belgian federal profile for an disagnostic report.",
         "exampleBoolean": false
       },
       {
@@ -133,6 +141,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/be-servicerequest"
+        },
+        "name": "Service Request core BE profile",
+        "description": "Belgian federal profile for an Service Request.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/be-allergyintolerancecode"
         },
         "name": "ValueSet allergy intolerance code",
@@ -169,14 +185,6 @@
         },
         "name": "ValueSet exposureroute",
         "description": "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/be-noallergy"
-        },
-        "name": "ValueSet no allergies",
-        "description": "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.",
         "exampleBoolean": false
       },
       {
@@ -285,6 +293,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/be-noallergy"
+        },
+        "name": "ValueSet no allergies",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "NamingSystem/be-ssin"
         },
         "name": "NamingSystem SSIN",
@@ -333,10 +348,50 @@
       },
       {
         "reference": {
+          "reference": "DiagnosticReport/diagnosticreport1"
+        },
+        "name": "DiagnosticReport 1",
+        "description": "DiagnosticReport 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/diagnosticreport2"
+        },
+        "name": "DiagnosticReport 2",
+        "description": "DiagnosticReport 2",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"
+      },
+      {
+        "reference": {
           "reference": "Observation/observation1"
         },
         "name": "Observation 1",
         "description": "Observation 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation2"
+        },
+        "name": "Observation 2",
+        "description": "Observation 2",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation3"
+        },
+        "name": "Observation 3",
+        "description": "Observation 3",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation4"
+        },
+        "name": "Observation 4",
+        "description": "Observation 4",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
       },
       {
@@ -378,6 +433,46 @@
         "name": "Provenance 1",
         "description": "Provenance 1",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance"
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/servicerequest1"
+        },
+        "name": "ServiceRequest 1",
+        "description": "ServiceRequest 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-servicerequest"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/specimen1"
+        },
+        "name": "Specimen 1",
+        "description": "Specimen 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/specimen2"
+        },
+        "name": "Specimen 2",
+        "description": "Specimen 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/specimen3"
+        },
+        "name": "Specimen 3",
+        "description": "Specimen 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/specimen4"
+        },
+        "name": "Specimen 4",
+        "description": "Specimen 4",
+        "exampleBoolean": true
       }
     ],
     "page": {
