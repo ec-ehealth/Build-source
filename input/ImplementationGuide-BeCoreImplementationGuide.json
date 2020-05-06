@@ -9,6 +9,15 @@
   "publisher": "eHealth Platform",
   "contact": [
     {
+      "name": "eHealth Platform",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ehealth.fgov.be"
+        }
+      ]
+    },
+	{
       "name": "Etienne Cantineau",
       "telecom": [
         {
