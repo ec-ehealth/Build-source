@@ -41,7 +41,7 @@
       {
         "system": "http://loinc.org",
         "code": "18723-7",
-        "display": "HEMATOLOGY STUDIES"
+        "display": "Hematology studies (set)"
       }
     ],
     "text": "Laboratory Hemathology Results"
@@ -57,7 +57,12 @@
   ],
   "resultsInterpreter": [
     {
-      "reference": "Organization/organization1"
+      "reference": "Myorga"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/specimen1"
     }
   ],
   "result": [
