@@ -6,6 +6,12 @@
       "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/language",
+      "valueCode": "en-BE"
+    }
+  ],
   "identifier": [
     {
       "system": "http://acme.com/lab/reports",
@@ -34,15 +40,16 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "18723-7"
+        "code": "18723-7",
+        "display": "HEMATOLOGY STUDIES"
       }
     ],
-    "text": "HEMATOLOGY STUDIES"
+    "text": "Laboratory Hemathology Results"
   },
   "subject": {
     "reference": "Patient/patient1"
   },
-  "effectiveDateTime": "1979-12-11T13:28:17-05:00",
+  "effectiveDateTime": "2015-11-04T13:18:00+01:00",
   "performer": [
     {
       "reference": "Organization/organization1"

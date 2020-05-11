@@ -22,6 +22,7 @@
   "subject": {
     "reference": "Patient/patient1"
   },
+  "authoredOn": "2015-11-01T14:41:00+01:00",
   "requester": {
     "reference": "Practitioner/practitioner1"
   },

@@ -38,6 +38,34 @@
   "differential": {
     "element": [
       {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DiagnosticReport.extension:language",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "language",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/language"
+            ]
+          }
+        ]
+      },
+      {
         "id": "DiagnosticReport.basedOn",
         "path": "DiagnosticReport.basedOn",
         "type": [
