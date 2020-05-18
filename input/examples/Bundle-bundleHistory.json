@@ -4,7 +4,7 @@
   "type": "message",
   "entry": [
     {
-      "fullUrl": "urn:uuid:8df87da3-5c85-4bea-8996-33b364a0eea9",
+      "fullUrl": "http://example.org/fhir",
       "resource": {
         "resourceType": "Provenance",
         "id": "CDHCPARTY1.13",
@@ -59,7 +59,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:2a971dd8-b621-4a74-b984-ca2a7a619220",
+      "fullUrl": "http://example.org/fhir",
       "resource": {
         "resourceType": "Provenance",
         "id": "CDHCPARTY1.14",
@@ -114,7 +114,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:8cf2c41f-988e-40b8-8832-cad4f10803f5",
+      "fullUrl": "http://example.org/fhir",
       "resource": {
         "resourceType": "Provenance",
         "id": "CDHCPARTY1.15",
