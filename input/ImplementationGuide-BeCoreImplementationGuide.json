@@ -157,14 +157,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/be-causativeagent"
-        },
-        "name": "ValueSet causative agent",
-        "description": "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/be-civilstate"
         },
         "name": "ValueSet civil state",
@@ -181,26 +173,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/be-exposureroute"
-        },
-        "name": "ValueSet exposureroute",
-        "description": "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/be-beproductorservice"
         },
         "name": "ValueSet productor service",
         "description": "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/be-riskmanifestation"
-        },
-        "name": "ValueSet risk manifestation",
-        "description": "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.",
         "exampleBoolean": false
       },
       {
@@ -225,14 +201,6 @@
         },
         "name": "CodeSystem CD-FED-COUNTRY",
         "description": "FedICT country codes.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/cd-hcparty"
-        },
-        "name": "CodeSystem CD-HCPARTY",
-        "description": "healthcare party in Belgium.",
         "exampleBoolean": false
       },
       {
@@ -269,6 +237,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/be-causativeagent"
+        },
+        "name": "ValueSet causative agent",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "NamingSystem/be-cbe"
         },
         "name": "NamingSystem CBE",
@@ -285,6 +260,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/be-exposureroute"
+        },
+        "name": "ValueSet exposure route",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "NamingSystem/be-nihdi"
         },
         "name": "NamingSystem NIHDI",
@@ -296,6 +278,13 @@
           "reference": "ValueSet/be-noallergy"
         },
         "name": "ValueSet no allergies",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/be-riskmanifestation"
+        },
+        "name": "ValueSet risk manifestation",
         "exampleBoolean": false
       },
       {
@@ -340,6 +329,21 @@
       },
       {
         "reference": {
+          "reference": "Bundle/bundleHistory"
+        },
+        "name": "Bundle History",
+        "description": "This Bundle contains the history of the value sets and code systems",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cd-hcparty"
+        },
+        "name": "CodeSystem CD-HCPARTY",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Coverage/coverage1"
         },
         "name": "coverage 1",
@@ -361,6 +365,14 @@
         "name": "DiagnosticReport 2",
         "description": "DiagnosticReport 2",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"
+      },
+      {
+        "reference": {
+          "reference": "Organization/eHealthPlatform"
+        },
+        "name": "eHealth Platform organization",
+        "description": "eHealth Platform organization",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
       },
       {
         "reference": {
