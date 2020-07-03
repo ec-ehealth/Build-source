@@ -12,7 +12,7 @@
     "* See: https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html#igroot              *",
     "********************************************************************************************"
   ],
-  "package-id": "BeCoreImplementationGuide",
+  "package-id": "fed.be.core",
   "title": "The Core Belgian Federal FHIR Profiles",
   "canonical": "https://www.ehealth.fgov.be/standards/fhir",
   "introduction": "The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.",
