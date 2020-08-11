@@ -149,14 +149,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/be-beproductorservice"
-        },
-        "name": "ValueSet productor service",
-        "description": "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/cd-civilstate"
         },
         "name": "CodeSystem CD-CIVILSTATE",
@@ -177,30 +169,6 @@
         },
         "name": "CodeSystem CD-FED-COUNTRY",
         "description": "FedICT country codes.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/agreement-types"
-        },
-        "name": "CodeSystem agreement types",
-        "description": "Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/message-events"
-        },
-        "name": "CodeSystem message events",
-        "description": "Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/nihdi-legal-physiotherapy-fa"
-        },
-        "name": "CodeSystem NIHDILegalPhysiotherapyFa",
-        "description": "Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. \r\n\tThe codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions.",
         "exampleBoolean": false
       },
       {
@@ -270,30 +238,6 @@
         "name": "NamingSystem SSIN",
         "description": "The SSIN naming system",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Claim/bemycarenetclaim1"
-        },
-        "name": "BeMyCareNetClaim 1",
-        "description": "BeMyCareNetClaim 1",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim"
-      },
-      {
-        "reference": {
-          "reference": "Bundle/bemycareneteagreementdemand1"
-        },
-        "name": "BeMyCareNetEAgreementDemand 1",
-        "description": "BeMyCareNetEAgreementDemand 1",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand"
-      },
-      {
-        "reference": {
-          "reference": "MessageHeader/bemycareneteagreementmessageheader1"
-        },
-        "name": "BeMyCareNetEAgreementMessageHeader 1",
-        "description": "BeMyCareNetEAgreementMessageHeader 1",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader"
       },
       {
         "reference": {
