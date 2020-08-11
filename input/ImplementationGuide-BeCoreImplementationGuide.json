@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "fed.be.core",
   "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/fed.be.core",
-  "version": "1.1.0",
+  "version": "x.x.x",
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
@@ -57,30 +57,6 @@
         },
         "name": "Disagnostic Report core BE profile",
         "description": "Belgian federal profile for an disagnostic report.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/be-mycarenetclaim"
-        },
-        "name": "My CareNet Claim BE profile",
-        "description": "Claim profile for use in the different eAgreement flow from MyCareNet.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/be-mycareneteagreementdemand"
-        },
-        "name": "My CareNet eAgreement Demand Bundle BE profile",
-        "description": "The profile for the demand for an agreement.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/be-mycareneteagreementmessageheader"
-        },
-        "name": "My CareNet eAgreement MessageHeader BE profile",
-        "description": "This is the generic MessageHeader profile for use in the different eAgreement flows from MyCareNet.",
         "exampleBoolean": false
       },
       {
