@@ -9,6 +9,11 @@
 *****************************************************************************************
 {% endcomment %} -->
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" >
+  <a name="versioning"> </a>
+  <h3>Version history</h3>
+  
+  <p><a href = "changes.html">A list of changes</a> to the specification since its initial release.</p>
+  
   <a name="scope"> </a>
   <h3>Scope</h3>
 	
