@@ -6,18 +6,13 @@
       "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"
     ]
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/language",
-      "valueCode": "en-BE"
-    }
-  ],
   "identifier": [
     {
       "system": "http://acme.com/lab/reports",
       "value": "11530231003.2015110413180000000"
     }
   ],
+  "language": "en-BE",
   "basedOn": [
     {
       "reference": "ServiceRequest/servicerequest1"
