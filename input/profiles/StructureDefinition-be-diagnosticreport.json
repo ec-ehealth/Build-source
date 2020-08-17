@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "be-diagnosticreport",
   "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport",
-  "version": "1.1.0",
+  "version": "x.x.x",
   "name": "BeDiagnosticReport",
   "title": "Disagnostic Report core BE profile",
   "status": "active",
@@ -38,34 +38,6 @@
   "differential": {
     "element": [
       {
-        "id": "DiagnosticReport.extension",
-        "path": "DiagnosticReport.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "DiagnosticReport.extension:language",
-        "path": "DiagnosticReport.extension",
-        "sliceName": "language",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/language"
-            ]
-          }
-        ]
-      },
-      {
         "id": "DiagnosticReport.basedOn",
         "path": "DiagnosticReport.basedOn",
         "type": [
@@ -79,11 +51,13 @@
               "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-servicerequest"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -94,11 +68,14 @@
               "http://hl7.org/fhir/StructureDefinition/Location"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.performer",
         "path": "DiagnosticReport.performer",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -109,7 +86,8 @@
               "http://hl7.org/fhir/StructureDefinition/CareTeam"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.resultsInterpreter",
@@ -124,11 +102,13 @@
               "http://hl7.org/fhir/StructureDefinition/CareTeam"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.result",
         "path": "DiagnosticReport.result",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -136,7 +116,8 @@
               "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   }
