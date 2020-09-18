@@ -451,6 +451,10 @@
       {
         "code": "show-inherited-invariants",
         "value": "false"
+      },
+	  {
+        "code": "apply-version",
+        "value": "false"
       }
     ]
   }
